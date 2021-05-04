@@ -2,7 +2,7 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
 
-name: 同步「Dog」脚本
+name: 同步「Master」脚本
 on:
   workflow_dispatch:
   schedule:
@@ -10,11 +10,11 @@ on:
   push:
     branches: [ master ]
   repository_dispatch:
-    types: sync-ElsaKing-scripts
+    types: sync-master-scripts
 jobs:
   repo-sync:
     env:
-      PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
+      PAT: ${{ secrets.PAT }} 
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
@@ -22,11 +22,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync-ElsaKing-scripts
+      - name: sync-master-scripts
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/ElsaKing/DogDog.git"
+          source_repo: "https://github.com/amlph/master.git"
           source_branch: "main"
           destination_branch: "main"
           github_token: ${{ secrets.PAT }}
