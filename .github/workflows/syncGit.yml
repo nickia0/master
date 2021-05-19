@@ -8,13 +8,13 @@ on:
   schedule:
     - cron: '17 0-23/3 * * *'
   push:
-    branches: [ master ]
+    branches: [ main ]
   repository_dispatch:
-    types: sync-master-scripts
+    types: sync-Master-scripts
 jobs:
   repo-sync:
     env:
-      PAT: ${{ secrets.PAT }} 
+      PAT: ${{ secrets.PAT }} #此处PAT需要申请，教程详见：https://www.jianshu.com/p/bb82b3ad1d11
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
@@ -22,7 +22,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync-master-scripts
+      - name: sync-Master-scripts
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
