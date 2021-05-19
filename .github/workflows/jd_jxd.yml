@@ -1,14 +1,14 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: 「活动」探秘星空
+name: 「京东」京小兑
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 0 9-14 5 *'
+    - cron: '30 0 * * *'
   repository_dispatch:
-    types: adolf_ETIP
+    types: jd_jxd
 jobs:
   build:
 
@@ -31,9 +31,9 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 「活动」探秘星空'
-        run: 
-          node adolf_ETIP.js
+      - name: '运行 「京东」京小兑'
+        run: |
+          node jd_jxd.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
@@ -49,4 +49,4 @@ jobs:
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-          JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
+          JD_JXD_EXCHANGE: ${{ secrets.JD_JXD_EXCHANGE }}

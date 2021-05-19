@@ -19,13 +19,13 @@ inputs:
     - timer: #半点京豆雨
         parameters:
           name: Half-RedRain
-          cronExpression: "3 30 20-23/1 * * * *"
+          cronExpression: "0 30 16-23/1 * * * *"
           enable: true
           argument: jd_half_redrain
     - timer: #整点京豆雨
         parameters:
           name: Super-RedRain
-          cronExpression: "3 0 * * * * *"
+          cronExpression: "0 0 * * * * *"
           enable: true
           argument: jd_super_redrain
     - timer: #东东超市兑换奖品
@@ -55,7 +55,7 @@ inputs:
     - timer: #争分夺秒新一天-2
         parameters:
           name: New-Day-2
-          cronExpression: "10 0 0 * * * *"
+          cronExpression: "30 0 0 * * * *"
           enable: true
           argument: jd_shop&jd_sgmh&jd_jin_tie
     - timer: #店铺签到
