@@ -11,8 +11,7 @@ let shareCodes = [
   'CNvSTqcDJe_b2wUKPXfxRg==@h4hYVUAJA7uWOenc-9278w==@2DdrW14yn8Wpa-hnVE_tyQ==@q-s58HXr-9Wa7U6W4YY07g==@9YK2NDC-4hfds8GapbM3Mw==@1kQvHa76_N3r3niWakfV3g==',//账号二的好友shareCode，不同好友中间用@符号隔开
   'CNvSTqcDJe_b2wUKPXfxRg==@h4hYVUAJA7uWOenc-9278w==@2DdrW14yn8Wpa-hnVE_tyQ==@q-s58HXr-9Wa7U6W4YY07g==@9YK2NDC-4hfds8GapbM3Mw==@1kQvHa76_N3r3niWakfV3g==',
   'CNvSTqcDJe_b2wUKPXfxRg==@h4hYVUAJA7uWOenc-9278w==@2DdrW14yn8Wpa-hnVE_tyQ==@q-s58HXr-9Wa7U6W4YY07g==@9YK2NDC-4hfds8GapbM3Mw==@1kQvHa76_N3r3niWakfV3g==',
-  'CNvSTqcDJe_b2wUKPXfxRg==@h4hYVUAJA7uWOenc-9278w==@2DdrW14yn8Wpa-hnVE_tyQ==@q-s58HXr-9Wa7U6W4YY07g==@9YK2NDC-4hfds8GapbM3Mw==@1kQvHa76_N3r3niWakfV3g=='
-  
+  'CNvSTqcDJe_b2wUKPXfxRg==@h4hYVUAJA7uWOenc-9278w==@2DdrW14yn8Wpa-hnVE_tyQ==@q-s58HXr-9Wa7U6W4YY07g==@9YK2NDC-4hfds8GapbM3Mw==@1kQvHa76_N3r3niWakfV3g==',
 ]
 // 判断github action里面是否有京喜工厂互助码
 if (process.env.DREAM_FACTORY_SHARE_CODES) {
