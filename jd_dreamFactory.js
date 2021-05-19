@@ -44,7 +44,7 @@ const jxOpenUrl = `openjd://virtual?params=%7B%20%22category%22:%20%22jump%22,%2
 let cookiesArr = [], cookie = '', message = '', allMessage = '';
 const inviteCodes = [
   'sViKCa_AA247qsvWZFj6jw==@JYcd8_pE3MPuhCrs1rvfXg==@BjJ5dgz4HXyWwOueZSjSAA==@lp0g0Rcw2-6BwyoAm_1hrw==@AjN-56UyycsHl5EkXhp7AQ==',
-  'sViKCa_AA247qsvWZFj6jw==@JYcd8_pE3MPuhCrs1rvfXg==@BjJ5dgz4HXyWwOueZSjSAA==@lp0g0Rcw2-6BwyoAm_1hrw==@AjN-56UyycsHl5EkXhp7AQ=='
+  'CNvSTqcDJe_b2wUKPXfxRg==@h4hYVUAJA7uWOenc-9278w==@2DdrW14yn8Wpa-hnVE_tyQ==@q-s58HXr-9Wa7U6W4YY07g==@9YK2NDC-4hfds8GapbM3Mw==@1kQvHa76_N3r3niWakfV3g=='
 ];
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 $.tuanIds = [];
